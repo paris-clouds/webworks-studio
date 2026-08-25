@@ -16,7 +16,7 @@ Studio Onboarding & GitHub Workspace Setup
 
 ## Live Site
 
-GITHUB PAGES URL
+https://paris-clouds.github.io/webworks-studio/
 
 ## Week 1 Requirements
 
