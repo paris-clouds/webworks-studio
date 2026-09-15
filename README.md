@@ -85,3 +85,30 @@ Used it to fix layout design to show what client wanted the site to look like.
 ## Live Site
 
 https://paris-clouds.github.io/week04-tailwind/
+
+WEEK 5 Bootstrap
+
+## 1. Framework Choice
+
+**Identify one feature Bootstrap made significantly faster to implement. Briefly explain what Bootstrap provided and why that helped this project.**
+
+Using .img-fluid, I sped up the process of making the images responsive. It laid much of the groundwork, and I did not need to use a lot of CSS to style it, making the process much faster, in my opinion.
+
+## 2. Adaptation
+
+**Identify one Bootstrap default you intentionally changed for the client. Explain what you changed and how the adaptation better supports Cedar & Stone.**
+
+I changed the default button styling; the links were plain HTML links without Bootstrap styling. I created custom Bootstrap button classes using the provided colors in the README.
+
+The buttons make important actions like “Explore our services” and “Request a consultation” stand out more clearly. The colors also match the Cedar & Stone brand palette, giving the website a more professional appearance while making it easier for visitors to find everything.
+
+## 3. Professional Judgment
+
+**Identify one part of the project you would not rebuild from scratch because Bootstrap already provides an appropriate solution. Explain why keeping the framework solution is the better professional choice.**
+
+I would not rebuild the responsive navigation bar from scratch. Bootstrap already provides a responsive navbar.
+Keeping Bootstrap’s navbar solution is the better professional choice because it saves development time, works across different screen sizes, and reduces the chance of errors in the navigation. Then I can use custom CSS only for Cedar & Stone’s colors and appearance instead of recreating the entire navigation system from scratch.
+
+## Live Site
+
+(https://paris-clouds.github.io/week05-bootstrap/)
