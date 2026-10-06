@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plan a Hike | Hill Country Trail Guide</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="brand" href="#top">Hill Country Trail Guide</a>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-navigation"
+          aria-label="Open menu"
+        >
+          <img
+            src="images/menu-icon.svg"
+            alt="Three horizontal lines representing a menu"
+          />
+          <span>Menu</span>
+        </button>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#trails">Trails</a>
+          <a href="#difficulty-help">Difficulty Guide</a>
+          <a href="#planner">Plan a Hike</a>
+        </nav>
+      </div>
+
+      <nav
+        class="mobile-nav wrap"
+        id="mobile-navigation"
+        aria-label="Mobile navigation"
+        hidden
+      >
+        <a href="#trails">Trails</a>
+        <a href="#difficulty-help">Difficulty Guide</a>
+        <a href="#planner">Plan a Hike</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="wrap hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Hill Country Trail Guide</p>
+            <h1>Choose a trail with confidence.</h1>
+            <p>
+              Compare the practical details first, then plan a hike that fits
+              your experience and available time.
+            </p>
+            <a class="button hero-button" href="#trails"> Explore trails </a>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="images/hiking-header.jpg"
+              alt="A hiker walking along a mountain trail"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap section" id="trails" aria-labelledby="trail-title">
+        <div class="section-heading">
+          <p class="eyebrow">Popular choices</p>
+          <h2 id="trail-title">Trail comparison</h2>
+          <p>
+            Compare distance, time, elevation, and trail rules before you head
+            out.
+          </p>
+        </div>
+
+        <div class="trail-grid">
+          <article class="trail-card">
+            <img
+              class="trail-image"
+              src="images/juniper-creek-loop.jpg"
+              alt="Wooded trail overlooking a creek"
+            />
+
+            <div class="trail-card-content">
+              <h3>Juniper Creek Loop</h3>
+              <dl class="facts">
+                <div>
+                  <dt>Difficulty</dt>
+                  <dd>Easy</dd>
+                </div>
+                <div>
+                  <dt>Distance</dt>
+                  <dd>4.8 miles</dd>
+                </div>
+                <div>
+                  <dt>Estimated time</dt>
+                  <dd>2–2.5 hours</dd>
+                </div>
+                <div>
+                  <dt>Elevation gain</dt>
+                  <dd>620 ft</dd>
+                </div>
+                <div>
+                  <dt>Dogs</dt>
+                  <dd>Check current park rules</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="trail-card">
+            <img
+              class="trail-image"
+              src="images/painted-bluff-trail.jpg"
+              alt="Open rocky hiking trail with hills in the distance"
+            />
+
+            <div class="trail-card-content">
+              <h3>Painted Bluff Trail</h3>
+              <dl class="facts">
+                <div>
+                  <dt>Difficulty</dt>
+                  <dd>Moderate</dd>
+                </div>
+                <div>
+                  <dt>Distance</dt>
+                  <dd>3.2 miles</dd>
+                </div>
+                <div>
+                  <dt>Estimated time</dt>
+                  <dd>2–3 hours</dd>
+                </div>
+                <div>
+                  <dt>Elevation gain</dt>
+                  <dd>840 ft</dd>
+                </div>
+                <div>
+                  <dt>Dogs</dt>
+                  <dd>No</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="trail-card">
+            <img
+              class="trail-image"
+              src="images/live-oak-trail.jpg"
+              alt="Clear blue water surrounded by trees"
+            />
+
+            <div class="trail-card-content">
+              <h3>Live Oak Ridge</h3>
+              <dl class="facts">
+                <div>
+                  <dt>Difficulty</dt>
+                  <dd>Easy</dd>
+                </div>
+                <div>
+                  <dt>Distance</dt>
+                  <dd>6.1 miles</dd>
+                </div>
+                <div>
+                  <dt>Estimated time</dt>
+                  <dd>3–3.5 hours</dd>
+                </div>
+                <div>
+                  <dt>Elevation gain</dt>
+                  <dd>410 ft</dd>
+                </div>
+                <div>
+                  <dt>Dogs</dt>
+                  <dd>Yes, leashed</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="wrap section help-card"
+        id="difficulty-help"
+        aria-labelledby="difficulty-title"
+      >
+        <div class="help-copy">
+          <p class="eyebrow">Plain-language help</p>
+          <h2 id="difficulty-title">
+            Not sure what “Easy” or “Moderate” means?
+          </h2>
+          <p>
+            Get a quick explanation of the labels used to describe hiking
+            trails.
+          </p>
+        </div>
+
+        <div class="help-action">
+          <button
+            class="button secondary"
+            id="difficulty-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="difficulty-panel"
+          >
+            What Does Difficulty Mean?
+          </button>
+
+          <div id="difficulty-panel" class="difficulty-panel" hidden>
+            <p>
+              Hiking trail difficulty levels are typically classified using
+              descriptive terms (Easy, Moderate, Difficult/Strenuous) and
+              technical scales (like the Yosemite Decimal System) based on
+              distance, elevation gain, and terrain.
+            </p>
+            <p>
+              <b>Easy:</b> Relaxed walks suitable for walkers with average
+              levels of fitness and in general good health. These walks are
+              typically on maintained trails or quiet roads and have good
+              signage.
+            </p>
+            <p>
+              <b>Moderate:</b> Mostly easy but may include longer hikes on some
+              days with some moderate uphill or downhill elevations. Generally,
+              the walking routes are well maintained but may involve some
+              rougher terrain and steeper or exposed sections on certain days.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="wrap section planner"
+        id="planner"
+        aria-labelledby="planner-title"
+      >
+        <div class="planner-intro">
+          <p class="eyebrow">Trip planning</p>
+          <h2 id="planner-title">Plan Your Saturday Hike</h2>
+          <p>
+            Tell us a little about your plan. This classroom form does not send
+            data to a server.
+          </p>
+        </div>
+
+        <form id="hike-form">
+          <div class="field-grid">
+            <div class="field">
+              <label for="trail">Trail</label>
+              <select id="trail" name="trail" required>
+                <option value="">Choose a trail</option>
+                <option>Juniper Creek Loop</option>
+                <option>Painted Bluff Trail</option>
+                <option>Live Oak Ridge</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="experience">Hiking Experience</label>
+              <select id="experience" name="experience" required>
+                <option value="">Choose experience level</option>
+                <option>Beginner</option>
+                <option>Some experience</option>
+                <option>Experienced</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="hours">Time Available</label>
+              <select id="hours" name="hours" required>
+                <option value="">Choose available time</option>
+                <option value="2">About 2 hours</option>
+                <option value="3">About 3 hours</option>
+                <option value="4">4+ hours</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="check-row">
+            <input id="confirm" name="confirm" type="checkbox" required />
+            <label for="confirm">
+              I understand that I should check current weather, trail
+              conditions, and official park information before leaving home.
+            </label>
+          </div>
+
+          <button class="button" type="submit">Review My Plan</button>
+        </form>
+
+        <div
+          id="form-feedback"
+          class="feedback"
+          role="status"
+          aria-live="polite"
+        ></div>
+      </section>
+
+      <section
+        class="wrap section before-you-go"
+        id="before-you-go"
+        aria-labelledby="before-you-go-title"
+      >
+        <div class="before-intro">
+          <h2 id="before-you-go-title">Before You Go</h2>
+          <p>Check park information before leaving home.</p>
+        </div>
+
+        <div class="before-item">
+          <h3>Parking</h3>
+          <p>Members park for free.</p>
+        </div>
+
+        <div class="before-item">
+          <h3>Water</h3>
+          <p>Bring plenty of water.</p>
+        </div>
+
+        <div class="before-item">
+          <h3>Check Weather</h3>
+          <p>Check the weather before heading out. Plan ahead.</p>
+        </div>
+
+        <div class="before-item">
+          <h3>Safety</h3>
+          <p>Cell service is limited. Have a plan ready.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>Hill Country Trail Guide · A WebWorks Studio fictional client</p>
+      </div>
+    </footer>
+  </body>
+</html>
